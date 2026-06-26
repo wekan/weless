@@ -4,3 +4,16 @@
 # lix-managed Haxe compiler/library cache (restored via `npx lix download`)
 /.haxelib/
 /dl/
+
+# Environment files (keep the tracked build script, ignore local secret variants)
+.env
+.env.*
+*.env.local
+!app.env
+
+# Extra Node/editor/OS artifacts
+yarn-error.log
+.nyc_output/
+*.tsbuildinfo
+*.orig
+*.rej

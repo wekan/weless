@@ -1,0 +1,10 @@
+# Backend → PHP (traditional web hosting, native PDO).
+-cp src
+-cp src/server
+-lib tink_web
+-main ServerMain
+-php deploy/www/api
+
+# Silence deprecation warnings from third-party tink/HaxeUI libraries.
+-w -WDeprecated
+-w -WDeprecatedEnumAbstract

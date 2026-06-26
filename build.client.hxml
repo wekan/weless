@@ -1,0 +1,11 @@
+# Frontend only: HaxeUI HTML5/JS client.
+-cp src
+-cp src/client
+-lib haxeui-core
+-lib haxeui-html5
+-main ClientMain
+-js deploy/www/html5/app.js
+
+# Silence deprecation warnings from third-party tink/HaxeUI libraries.
+-w -WDeprecated
+-w -WDeprecatedEnumAbstract

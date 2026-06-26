@@ -1,0 +1,12 @@
+# Backend → JS (AWS Lambda / Cloudflare Workers / serverless).
+-cp src
+-cp src/server
+-lib tink_web
+-lib hxnodejs
+-D nodejs
+-main ServerMain
+-js deploy/aws/index.js
+
+# Silence deprecation warnings from third-party tink/HaxeUI libraries.
+-w -WDeprecated
+-w -WDeprecatedEnumAbstract

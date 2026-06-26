@@ -1,0 +1,13 @@
+# Local dev server (Node): serves the HTML5 client + routes /api to the backend.
+# Not for production — the serverless target is build.server.js.hxml.
+-cp src
+-cp src/server
+-lib tink_web
+-lib hxnodejs
+-D nodejs
+-main DevServerMain
+-js deploy/local/devserver.js
+
+# Silence deprecation warnings from third-party tink/HaxeUI libraries.
+-w -WDeprecated
+-w -WDeprecatedEnumAbstract

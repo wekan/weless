@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox styleName="kanban-column">
+    <hbox width="100%">
+        <label id="columnTitle" styleName="kanban-column-title" width="100%" />
+    </hbox>
+    <vbox id="cardsContainer" width="100%" style="spacing:6px" />
+    <button id="addCardButton" text="+ Add a card" width="100%" />
+</vbox>

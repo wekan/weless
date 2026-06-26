@@ -1,0 +1,34 @@
+# =============================================================================
+#  Dual-target build for the Haxe/HaxeUI Kanban app.
+#
+#  Usage:
+#    haxe build.hxml              # builds BOTH targets below
+#    haxe build.client.hxml       # just the HTML5/JS frontend
+#    haxe build.server.php.hxml   # just the PHP backend
+#    haxe build.server.js.hxml    # just the Node/serverless backend
+# =============================================================================
+
+# ----- Common configuration (applied to every target via --each) -------------
+-cp src
+-D analyzer-optimize
+# Silence deprecation warnings coming from the third-party tink/HaxeUI libraries.
+-w -WDeprecated
+-w -WDeprecatedEnumAbstract
+
+--each
+
+# ----- TARGET 1: Frontend (HTML5 / JS) ---------------------------------------
+-cp src/client
+-lib haxeui-core
+-lib haxeui-html5
+-main ClientMain
+-js deploy/www/html5/app.js
+
+--next
+
+# ----- TARGET 2: Backend (PHP webhost — default) -----------------------------
+# Swap this block for build.server.js.hxml to target AWS Lambda / Cloudflare.
+-cp src/server
+-lib tink_web
+-main ServerMain
+-php deploy/www/api

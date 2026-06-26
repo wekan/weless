@@ -1,0 +1,5 @@
+# @install: lix --silent download "gh://github.com/haxeui/haxeui-html5#8d6d367de0411659513b4519f4220dd75ac9709a" into haxeui-html5/1.7.0/github/8d6d367de0411659513b4519f4220dd75ac9709a
+-lib haxeui-core
+-cp ${HAXE_LIBCACHE}/haxeui-html5/1.7.0/github/8d6d367de0411659513b4519f4220dd75ac9709a/
+-D haxeui-html5=1.7.0
+-D haxeui_allow_subpixels

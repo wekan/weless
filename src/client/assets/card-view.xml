@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox styleName="kanban-card" width="100%">
+    <label id="cardTitle" styleName="kanban-card-title" width="100%" />
+</vbox>

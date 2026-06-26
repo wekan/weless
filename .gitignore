@@ -1,0 +1,6 @@
+# Build output
+/deploy/
+
+# lix-managed Haxe compiler/library cache (restored via `npx lix download`)
+/.haxelib/
+/dl/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module id="wekan-haxe">
+    <!-- Make everything under src/client/assets available to the resource system. -->
+    <resources>
+        <resource path="assets" prefix="wekan" />
+    </resources>
+
+    <!-- Our custom Kanban styling, layered on top of the default HaxeUI theme. -->
+    <themes>
+        <default>
+            <style resource="wekan/styles/kanban.css" />
+        </default>
+    </themes>
+</module>

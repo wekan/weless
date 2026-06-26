@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%" height="100%" style="spacing:0;padding:0">
+
+    <hbox styleName="kanban-header" width="100%">
+        <label text="WeKan · Haxe + HaxeUI" styleName="kanban-title" verticalAlign="center" />
+        <spacer width="100%" />
+        <button id="addColumnButton" text="+ Add List" />
+    </hbox>
+
+    <scrollview id="boardScroll" width="100%" height="100%" style="background-color:#0079BF">
+        <hbox id="boardContainer" styleName="kanban-board" />
+    </scrollview>
+
+</vbox>
